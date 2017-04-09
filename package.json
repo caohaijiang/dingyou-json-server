@@ -1,10 +1,9 @@
 {
   "name": "dingyou-json-server",
   "version": "1.0.0",
-  "description": "> 这是jsonServer+mockjs的一个应用实例, 请向这两位作者致敬.",
+  "description": "",
   "scripts": {
-    "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -15,7 +14,7 @@
     "lodash": "^4.17.4",
     "mockjs": "^1.0.1-beta3"
   },
-  "author": "",
+  "author": "caohaijiang",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/caohaijiang/dingyou-json-server/issues"
