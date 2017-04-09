@@ -5,7 +5,7 @@ After=syslog.target
 
 [Service]
 Type=forking
-ExecStart=/usr/local/bin/forever -a start -l /appServer/myporj/jsonServer/forever.log /appServer/myproj/jsonServer/index.js
+ExecStart=/usr/local/bin/forever -a start -l /appServer/myproj/jsonServer/forever.log /appServer/myproj/jsonServer/index.js
 ExecReload=/usr/local/bin/forever restart /appServer/myproj/jsonServer/index.js
 ExecStop=/usr/local/bin/forever stop /appServer/myproj/jsonServer/index.js
 PrivateTmp=true
