@@ -1,0 +1,14 @@
+[Unit]
+Description=myproj-jsonServer
+After=network.target
+After=syslog.target
+
+[Service]
+Type=forking
+ExecStart=/usr/local/bin/forever -a start -l /appServer/myporj/jsonServer/forever.log /appServer/myproj/jsonServer/index.js
+ExecReload=/usr/local/bin/forever restart /appServer/myproj/jsonServer/index.js
+ExecStop=/usr/local/bin/forever stop /appServer/myproj/jsonServer/index.js
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
